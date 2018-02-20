@@ -9,6 +9,8 @@ import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
 
+import static com.nixorg.idea.fly.FlyPlugin.isFileEditor;
+
 public class FlyTypedActionHandler implements TypedActionHandlerEx {
 
     private final TypedActionHandler originalHandler;
@@ -28,7 +30,7 @@ public class FlyTypedActionHandler implements TypedActionHandlerEx {
 
     @Override
     public void execute(@NotNull Editor editor, char charTyped, @NotNull DataContext dataContext) {
-        if(!FlyPlugin.isEnable() || !flyKeyHandler.handleKey(editor, KeyStroke.getKeyStroke(charTyped), dataContext)) {
+        if(!isFileEditor(editor) || !FlyPlugin.isEnable() || !flyKeyHandler.handleKey(editor, KeyStroke.getKeyStroke(charTyped), dataContext)) {
             originalHandler.execute(editor, charTyped, dataContext);
         }
     }
