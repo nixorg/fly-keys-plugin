@@ -35,6 +35,8 @@
     <action id="InsertMode" class="com.nixorg.idea.fly.action.InsertMode" text="InsertMode" description="insert"/>
     <action id="CommandMode" class="com.nixorg.idea.fly.action.CommandMode" text="CommandMode" description="CommandMode"/>
     <action id="DeleteHorizontalSpaces" class="com.nixorg.idea.fly.action.DeleteHorizontalSpaces" text="DeleteHorizontalSpaces" description="DeleteHorizontalSpaces"/>
+    <action id="ForwardPunctuation" class="com.nixorg.idea.fly.action.ForwardPunctuation" text="ForwardPunctuation" description="ForwardPunctuation"/>
+    <action id="BackwardPunctuation" class="com.nixorg.idea.fly.action.BackwardPunctuation" text="BackwardPunctuation" description="BackwardPunctuation"/>
     <action id="ChangeCharAction" class="com.nixorg.idea.fly.action.ChangeCharAction" text="ChangeCharAction" description="ChangeCharAction"/>
   </actions>
 
